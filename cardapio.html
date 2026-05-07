@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio & Pedido | Supreme Pizzaria Artesanal</title>
+  <meta name="description" content="Monte seu pedido na Supreme Pizzaria Artesanal. Escolha o sabor, tamanho e bebida. Enviamos direto pelo WhatsApp!"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="page-cardapio">
+
+  <!-- NAV -->
+  <nav class="nav nav--solid" id="nav">
+    <a href="index.html" class="nav__logo">
+      <span class="logo-text">SUPREME</span>
+      <div class="logo-flag"><span></span><span></span><span></span></div>
+    </a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="cardapio.html" class="active">Cardápio</a></li>
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="index.html#galeria">Galeria</a></li>
+      <li><a href="index.html#contato">Contato</a></li>
+    </ul>
+    <a href="cardapio.html" class="nav__cta">🍕 Fazer Pedido</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HEADER DA PÁGINA -->
+  <div class="page-header">
+    <div class="container">
+      <p class="tag green">Cardápio & Pedido</p>
+      <h1>Monte seu pedido</h1>
+      <p class="page-header__sub">Escolha o sabor, tamanho e bebida. Enviamos sua mensagem direto pro nosso WhatsApp!</p>
+      <div class="pedido-min-banner">
+        <span>⚡ Pedido mínimo: <strong>R$ 50,00</strong> · Pagamento na entrega</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="cardapio-main">
+    <div class="container">
+      <div class="cardapio-layout">
+
+        <!-- COLUNA ESQUERDA: cardápio -->
+        <div class="cardapio-col">
+
+          <!-- FILTROS -->
+          <div class="filtros">
+            <button class="filtro-btn active" data-cat="pizzas">🍕 Pizzas</button>
+            <button class="filtro-btn" data-cat="bebidas">🥤 Bebidas</button>
+          </div>
+
+          <!-- LISTA PIZZAS -->
+          <div class="item-list" id="listaPizzas">
+            <div class="item-group-title">Pizzas — escolha até 2 sabores</div>
+            <!-- gerado via JS -->
+          </div>
+
+          <!-- LISTA BEBIDAS -->
+          <div class="item-list hidden" id="listaBebidas">
+            <div class="item-group-title">Bebidas</div>
+            <!-- gerado via JS -->
+          </div>
+        </div>
+
+        <!-- COLUNA DIREITA: formulário de pedido -->
+        <div class="pedido-col">
+          <div class="pedido-card" id="pedidoCard">
+            <h2 class="pedido-card__title">🍕 Seu Pedido</h2>
+
+            <!-- SABORES -->
+            <div class="form-section">
+              <label class="form-label">Sabor(es) escolhido(s) <span class="req">*</span></label>
+              <div class="sabores-escolhidos" id="saboresEscolhidos">
+                <p class="placeholder-text">← Toque em um sabor no cardápio</p>
+              </div>
+              <p class="form-hint">Você pode combinar até 2 sabores</p>
+            </div>
+
+            <!-- TAMANHO -->
+            <div class="form-section">
+              <label class="form-label">Tamanho <span class="req">*</span></label>
+              <div class="tamanho-options">
+                <label class="tamanho-opt" id="optBroto">
+                  <input type="radio" name="tamanho" value="Broto" id="radioBroto"/>
+                  <div class="tamanho-box">
+                    <span class="tamanho-icon">🍕</span>
+                    <strong>Broto</strong>
+                    <span>4 fatias</span>
+                    <span class="tamanho-preco">A partir de R$ 48</span>
+                  </div>
+                </label>
+                <label class="tamanho-opt" id="optGrande">
+                  <input type="radio" name="tamanho" value="Grande" id="radioGrande"/>
+                  <div class="tamanho-box">
+                    <span class="tamanho-icon">🍕🍕</span>
+                    <strong>Grande</strong>
+                    <span>8 fatias</span>
+                    <span class="tamanho-preco">A partir de R$ 64</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- BEBIDA -->
+            <div class="form-section">
+              <label class="form-label">Bebida</label>
+              <div class="bebida-toggle">
+                <button class="toggle-btn active" id="btnSemBebida" onclick="toggleBebida(false)">Sem bebida</button>
+                <button class="toggle-btn" id="btnComBebida" onclick="toggleBebida(true)">Quero bebida</button>
+              </div>
+              <div id="bebidaSelect" class="hidden">
+                <select id="selectBebida" class="form-select">
+                  <option value="">Escolha uma bebida...</option>
+                  <option value="Coca-Cola 2L (R$ 15,00)">Coca-Cola 2L — R$ 15,00</option>
+                  <option value="Coca-Cola Zero 2L (R$ 15,00)">Coca-Cola Zero 2L — R$ 15,00</option>
+                  <option value="Coca-Cola 600ml (R$ 9,00)">Coca-Cola 600ml — R$ 9,00</option>
+                  <option value="Coca-Cola Zero 600ml (R$ 9,00)">Coca-Cola Zero 600ml — R$ 9,00</option>
+                  <option value="Suco Del Valle Cítrico 1,5L (R$ 12,00)">Suco Del Valle Cítrico 1,5L — R$ 12,00</option>
+                  <option value="Suco Del Valle Uva 1,5L (R$ 12,00)">Suco Del Valle Uva 1,5L — R$ 12,00</option>
+                  <option value="Guaraná Kuat 2L (R$ 13,00)">Guaraná Kuat 2L — R$ 13,00</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- OBSERVAÇÃO -->
+            <div class="form-section">
+              <label class="form-label" for="obs">Observações</label>
+              <textarea id="obs" class="form-textarea" rows="3" placeholder="Ex: sem cebola, borda recheada, ponto da massa..."></textarea>
+            </div>
+
+            <!-- ENDEREÇO -->
+            <div class="form-section">
+              <label class="form-label" for="endereco">Endereço de entrega <span class="req">*</span></label>
+              <input type="text" id="endereco" class="form-input" placeholder="Rua, número, bairro..."/>
+            </div>
+
+            <!-- AVISO PEDIDO MIN -->
+            <div class="pedido-min-aviso" id="avisoMin" style="display:none">
+              ⚠️ Pedido mínimo de <strong>R$ 50,00</strong>. Adicione bebida ou escolha o tamanho Grande.
+            </div>
+
+            <!-- BOTÃO -->
+            <button class="btn btn--whatsapp btn--block btn--lg" id="btnEnviar" onclick="enviarPedido()">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.83L.057 23.999l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.359-.214-3.741.981.999-3.648-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+              Enviar Pedido pelo WhatsApp
+            </button>
+            <p class="pedido-card__hint">Você será redirecionado ao WhatsApp com seu pedido pronto.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER SIMPLES -->
+  <footer class="footer footer--simple">
+    <div class="container">
+      <div class="footer__bottom">
+        <p>© 2025 Supreme Pizzaria Artesanal</p>
+        <a href="index.html" class="link-verde">← Voltar ao início</a>
+      </div>
+    </div>
+    <div class="footer__stripe"></div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="cardapio.js"></script>
+</body>
+</html>

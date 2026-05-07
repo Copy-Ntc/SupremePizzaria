@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- fundo preto -->
+  <rect width="64" height="64" rx="14" fill="#0A0A0A"/>
+  <!-- pizza -->
+  <circle cx="32" cy="33" r="20" fill="#C8A050"/>
+  <circle cx="32" cy="33" r="20" fill="none" stroke="#8B4E18" stroke-width="5"/>
+  <!-- toppings -->
+  <circle cx="26" cy="27" r="4" fill="#C8302A"/>
+  <circle cx="38" cy="30" r="3" fill="#1A6B35"/>
+  <circle cx="30" cy="40" r="4" fill="#C8302A"/>
+  <circle cx="40" cy="42" r="3" fill="#1A6B35"/>
+  <!-- faixa tricolor top -->
+  <rect x="0" y="0" width="21" height="4" rx="2" fill="#1A6B35"/>
+  <rect x="21" y="0" width="22" height="4" fill="#FFFFFF"/>
+  <rect x="43" y="0" width="21" height="4" rx="2" fill="#C8302A"/>
+</svg>
