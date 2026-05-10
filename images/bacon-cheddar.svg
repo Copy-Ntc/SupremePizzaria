@@ -1,0 +1,34 @@
+<!--
+  IMAGEM: Bacon com Cheddar
+  TODO: Substituir este arquivo por uma foto real.
+  Tamanho recomendado: 600x600px, formato .jpg ou .webp
+  Nome do arquivo a manter: bacon-cheddar.jpg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%"><stop offset="0%" stop-color="#1c1c1c"/><stop offset="100%" stop-color="#080808"/></radialGradient>
+    <radialGradient id="massa" cx="45%" cy="40%"><stop offset="0%" stop-color="#D4A050"/><stop offset="100%" stop-color="#9B6820"/></radialGradient>
+    <radialGradient id="cheddar" cx="50%" cy="50%"><stop offset="0%" stop-color="#E89030"/><stop offset="100%" stop-color="#C07020"/></radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="165" ry="12" fill="rgba(0,0,0,0.5)"/>
+  <circle cx="200" cy="200" r="155" fill="#A06828"/>
+  <circle cx="200" cy="200" r="138" fill="url(#massa)"/>
+  <circle cx="200" cy="200" r="118" fill="url(#cheddar)"/>
+  <!-- Cheddar derretido manchas -->
+  <ellipse cx="190" cy="188" rx="50" ry="44" fill="#F0A840" opacity=".8"/>
+  <ellipse cx="218" cy="215" rx="44" ry="36" fill="#E89838" opacity=".75"/>
+  <!-- Bacon (tiras longas) -->
+  <rect x="162" y="162" width="48" height="10" rx="4" fill="#5A1810" transform="rotate(-25,186,167)"/>
+  <rect x="178" y="158" width="44" height="8"  rx="3" fill="#8B3020" transform="rotate(-25,200,162)" opacity=".8"/>
+  <rect x="165" y="205" width="50" height="10" rx="4" fill="#5A1810" transform="rotate(10,190,210)"/>
+  <rect x="168" y="202" width="46" height="8"  rx="3" fill="#8B3020" transform="rotate(10,191,206)" opacity=".8"/>
+  <rect x="198" y="178" width="46" height="9"  rx="4" fill="#5A1810" transform="rotate(35,221,182)"/>
+  <rect x="200" y="175" width="42" height="7"  rx="3" fill="#8B3020" transform="rotate(35,221,178)" opacity=".8"/>
+  <!-- Cebola caramelizada -->
+  <ellipse cx="176" cy="232" rx="12" ry="5" fill="#C07820" opacity=".75" transform="rotate(-15,176,232)"/>
+  <ellipse cx="222" cy="172" rx="10" ry="5" fill="#B87020" opacity=".7"  transform="rotate(20,222,172)"/>
+  <!-- Label -->
+  <rect x="60" y="340" width="280" height="36" rx="18" fill="rgba(0,0,0,0.55)"/>
+  <text x="200" y="363" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#F2EDE6">Bacon c/ Cheddar</text>
+</svg>

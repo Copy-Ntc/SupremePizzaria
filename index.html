@@ -6,238 +6,299 @@
   <title>Supreme Pizzaria Artesanal | Santa Rita do Sapucaí</title>
   <meta name="description" content="Supreme Pizzaria Artesanal — Pizza feita com amor em Santa Rita do Sapucaí, MG. Peça pelo WhatsApp!"/>
   <meta name="theme-color" content="#0A0A0A"/>
-
-  <!-- Favicon SVG inline -->
+  <!-- Favicon personalizado com logo Supreme -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
   <link rel="apple-touch-icon" href="favicon.svg"/>
-
-  <!-- Open Graph (link bonito ao compartilhar) -->
-  <meta property="og:title" content="Supreme Pizzaria Artesanal"/>
+  <!-- Open Graph — link bonito ao compartilhar no WhatsApp/Instagram -->
+  <meta property="og:title"       content="Supreme Pizzaria Artesanal"/>
   <meta property="og:description" content="Pizza artesanal em Santa Rita do Sapucaí, MG. Peça pelo WhatsApp!"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="og-image.svg"/>
-
+  <meta property="og:type"        content="website"/>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- ===== NAV ===== -->
-  <nav class="nav" id="nav">
-    <a href="index.html" class="nav__logo">
-      <span class="logo-text">SUPREME</span>
-      <div class="logo-flag"><span></span><span></span><span></span></div>
-    </a>
-    <ul class="nav__links" id="navLinks">
-      <li><a href="index.html" class="active">Início</a></li>
-      <li><a href="cardapio.html">Cardápio</a></li>
-      <li><a href="index.html#sobre">Sobre</a></li>
-      <li><a href="index.html#galeria">Galeria</a></li>
-      <li><a href="index.html#contato">Contato</a></li>
-    </ul>
-    <a href="cardapio.html" class="nav__cta">🍕 Fazer Pedido</a>
-    <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<!-- ================================================
+     NAVEGAÇÃO
+     ================================================ -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav__logo">
+    <span class="logo-text">SUPREME</span>
+    <div class="logo-flag"><span></span><span></span><span></span></div>
+  </a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="index.html"    class="active">Início</a></li>
+    <li><a href="cardapio.html"           >Cardápio</a></li>
+    <li><a href="#sobre"                  >Sobre</a></li>
+    <li><a href="#galeria"                >Galeria</a></li>
+    <li><a href="#contato"                >Contato</a></li>
+  </ul>
+  <a href="cardapio.html" class="nav__cta">🍕 Fazer Pedido</a>
+  <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero__bg">
-      <div class="hero__glow hero__glow--green"></div>
-      <div class="hero__glow hero__glow--red"></div>
+
+<!-- ================================================
+     HERO — Tela inicial
+     ================================================ -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <div class="hero__glow hero__glow--green"></div>
+    <div class="hero__glow hero__glow--red"></div>
+  </div>
+
+  <!-- Texto -->
+  <div class="hero__content">
+    <div class="hero__badge">🇮🇹 Pizzaria Artesanal · Santa Rita do Sapucaí</div>
+    <h1 class="hero__title">Pizza artesanal<br><em>de verdade.</em></h1>
+    <p class="hero__sub">Ingredientes selecionados, massa artesanal e muito sabor.<br>Entregamos quentinha na sua porta.</p>
+    <div class="hero__actions">
+      <a href="cardapio.html" class="btn btn--green btn--lg">Ver Cardápio & Pedir</a>
+      <a href="#sobre"        class="btn btn--outline btn--lg">Conheça a Supreme</a>
     </div>
-    <div class="hero__content">
-      <div class="hero__badge">🇮🇹 Pizzaria Artesanal · Santa Rita do Sapucaí</div>
-      <h1 class="hero__title">Pizza artesanal<br><em>de verdade.</em></h1>
-      <p class="hero__sub">Ingredientes selecionados, massa artesanal e muito sabor.<br>Entregamos quentinha na sua porta.</p>
-      <div class="hero__actions">
-        <a href="cardapio.html" class="btn btn--green btn--lg">Ver Cardápio & Pedir</a>
-        <a href="#sobre" class="btn btn--outline btn--lg">Conheça a Supreme</a>
+  </div>
+
+  <!-- Ilustração da pizza (lado direito) -->
+  <div class="hero__visual">
+    <div class="pizza-scene">
+
+      <!-- Prato -->
+      <div class="pizza-plate-shadow"></div>
+      <div class="pizza-plate">
+
+        <!-- Corpo da pizza -->
+        <div class="pizza-body">
+          <!-- Borda -->
+          <div class="pizza-crust"></div>
+          <!-- Molho -->
+          <div class="pizza-sauce"></div>
+          <!-- Queijo com manchas -->
+          <div class="pizza-cheese"></div>
+          <!-- Toppings decorativos -->
+          <div class="tp tp--red  tp--a"></div>
+          <div class="tp tp--red  tp--b"></div>
+          <div class="tp tp--red  tp--c"></div>
+          <div class="tp tp--green tp--d"></div>
+          <div class="tp tp--green tp--e"></div>
+          <!-- Centro brilho -->
+          <div class="pizza-shine"></div>
+        </div>
+
       </div>
+
+      <!-- Vapor -->
+      <div class="steam st1"></div>
+      <div class="steam st2"></div>
+      <div class="steam st3"></div>
+
+      <!-- Fatia saindo -->
+      <div class="pizza-slice">
+        <div class="slice-inner"></div>
+        <div class="slice-cheese"></div>
+        <div class="slice-tp"></div>
+      </div>
+
     </div>
-    <div class="hero__visual">
-      <div class="pizza-wrap">
-        <div class="pizza-plate">
-          <div class="pizza-body">
-            <div class="pizza-crust"></div>
-            <div class="tp tp1"></div><div class="tp tp2"></div>
-            <div class="tp tp3"></div><div class="tp tp4"></div>
-            <div class="tp tp5"></div>
-            <div class="pizza-center"></div>
+  </div>
+
+</section>
+
+<!-- Divisória -->
+<div class="section-divider"></div>
+
+
+<!-- ================================================
+     SOBRE — Quem somos
+     ================================================ -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre__grid">
+
+      <!-- Imagens / cards visuais -->
+      <div class="sobre__visual">
+        <div class="sobre__card sobre__card--1">🍕</div>
+        <div class="sobre__card sobre__card--2">🔥</div>
+        <div class="sobre__decor"></div>
+      </div>
+
+      <!-- Texto -->
+      <div class="sobre__text">
+        <p class="tag green">Sobre Nós</p>
+        <h2>Sabor artesanal com<br>alma italiana</h2>
+        <p>A <strong>Supreme Pizzaria Artesanal</strong> nasceu da paixão por pizzas de verdade — feitas com cuidado, ingredientes frescos e muito amor. Cada detalhe é pensado para você ter a melhor experiência.</p>
+        <p>Localizada no coração de Santa Rita do Sapucaí, somos referência em pizza artesanal na região. Venha nos visitar ou peça pelo delivery!</p>
+        <div class="pills">
+          <span>🌾 Massa Artesanal</span>
+          <span>🧀 Ingredientes Frescos</span>
+          <span>🔥 Feito com Amor</span>
+          <span>🚀 Delivery Rápido</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Divisória -->
+<div class="section-divider"></div>
+
+
+<!-- ================================================
+     GALERIA — Carousel de pizzas
+     ================================================ -->
+<section class="galeria" id="galeria">
+  <div class="container">
+    <div class="section-head">
+      <p class="tag green">Galeria</p>
+      <h2>Nossas Pizzas</h2>
+      <p class="sub">Beleza e sabor em cada fatia</p>
+    </div>
+  </div>
+
+  <!-- Trilha infinita -->
+  <div class="galeria__wrap">
+    <div class="galeria__track" id="galeriaTrack">
+      <!-- Cards gerados pelo JS com as imagens da pasta /images -->
+    </div>
+  </div>
+
+  <div class="galeria__cta">
+    <a href="cardapio.html" class="btn btn--green">Ver Cardápio Completo</a>
+  </div>
+</section>
+
+<!-- Divisória -->
+<div class="section-divider"></div>
+
+
+<!-- ================================================
+     CONTATO — Endereço, horários e mapa
+     ================================================ -->
+<section class="contato" id="contato">
+  <div class="container">
+    <div class="contato__grid">
+
+      <!-- Informações -->
+      <div class="contato__info">
+        <p class="tag green">Contato & Localização</p>
+        <h2>Venha nos visitar<br>ou peça delivery</h2>
+
+        <div class="contato__items">
+
+          <div class="c-item">
+            <span class="c-icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua Comendador Custódio Ribeiro, 92L<br>Centro — Santa Rita do Sapucaí, MG<br>CEP: 37540-000</p>
+            </div>
           </div>
-        </div>
-        <div class="steam st1"></div>
-        <div class="steam st2"></div>
-        <div class="steam st3"></div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== NUMBERS ===== -->
-  <section class="numbers">
-    <div class="numbers__inner">
-      <div class="numbers__item"><strong>100%</strong><span>Artesanal</span></div>
-      <div class="numbers__item"><strong>2</strong><span>Tamanhos</span></div>
-      <div class="numbers__item"><strong>6×</strong><span>Por semana</span></div>
-      <div class="numbers__item"><strong>⭐ 5,0</strong><span>Avaliação</span></div>
-    </div>
-  </section>
-
-  <!-- ===== SOBRE ===== -->
-  <section class="sobre" id="sobre">
-    <div class="container">
-      <div class="sobre__grid">
-        <div class="sobre__visual">
-          <div class="sobre__card sobre__card--1">🍕</div>
-          <div class="sobre__card sobre__card--2">🔥</div>
-          <div class="sobre__decor"></div>
-        </div>
-        <div class="sobre__text">
-          <p class="tag green">Sobre Nós</p>
-          <h2>Sabor artesanal com<br>alma italiana</h2>
-          <p>A <strong>Supreme Pizzaria Artesanal</strong> nasceu da paixão por pizzas de verdade — feitas com cuidado, ingredientes frescos e muito amor. Cada detalhe pensado para você ter a melhor experiência.</p>
-          <p>Localizada no coração de Santa Rita do Sapucaí, somos referência em pizza artesanal na região. Venha nos visitar ou peça pelo delivery!</p>
-          <div class="pills">
-            <span>🌾 Massa Artesanal</span>
-            <span>🧀 Ingredientes Frescos</span>
-            <span>🔥 Feito com Amor</span>
-            <span>🚀 Delivery Rápido</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALERIA ===== -->
-  <section class="galeria" id="galeria">
-    <div class="container">
-      <div class="section-head">
-        <p class="tag green">Galeria</p>
-        <h2>Nossas Pizzas</h2>
-        <p class="sub">Beleza e sabor em cada fatia</p>
-      </div>
-    </div>
-    <div class="galeria__track-wrap">
-      <div class="galeria__track" id="galeriaTrack">
-        <!-- cards duplicados para loop infinito -->
-        <div class="gal-card"><div class="gal-img">🍕</div><p>Margherita</p></div>
-        <div class="gal-card"><div class="gal-img">🌶️</div><p>Calabresa</p></div>
-        <div class="gal-card"><div class="gal-img">🐔</div><p>Frango Catupiry</p></div>
-        <div class="gal-card"><div class="gal-img">🧀</div><p>Quatro Queijos</p></div>
-        <div class="gal-card"><div class="gal-img">🥚</div><p>Portuguesa</p></div>
-        <div class="gal-card"><div class="gal-img">🍕</div><p>Pepperoni</p></div>
-        <div class="gal-card"><div class="gal-img" style="background:linear-gradient(135deg,#3a1010,#1a0505)">🌶️</div><p>Especial da Casa</p></div>
-        <!-- duplicatas para loop -->
-        <div class="gal-card"><div class="gal-img">🍕</div><p>Margherita</p></div>
-        <div class="gal-card"><div class="gal-img">🌶️</div><p>Calabresa</p></div>
-        <div class="gal-card"><div class="gal-img">🐔</div><p>Frango Catupiry</p></div>
-        <div class="gal-card"><div class="gal-img">🧀</div><p>Quatro Queijos</p></div>
-        <div class="gal-card"><div class="gal-img">🥚</div><p>Portuguesa</p></div>
-        <div class="gal-card"><div class="gal-img">🍕</div><p>Pepperoni</p></div>
-        <div class="gal-card"><div class="gal-img" style="background:linear-gradient(135deg,#3a1010,#1a0505)">🌶️</div><p>Especial da Casa</p></div>
-      </div>
-    </div>
-    <div class="galeria__cta">
-      <a href="cardapio.html" class="btn btn--green">Ver Cardápio Completo</a>
-    </div>
-  </section>
-
-  <!-- ===== CONTATO ===== -->
-  <section class="contato" id="contato">
-    <div class="container">
-      <div class="contato__grid">
-        <div class="contato__info">
-          <p class="tag green">Contato & Localização</p>
-          <h2>Venha nos visitar<br>ou peça delivery</h2>
-          <div class="contato__items">
-            <div class="c-item">
-              <span class="c-icon">📍</span>
-              <div>
-                <strong>Endereço</strong>
-                <p>Rua Comendador Custódio Ribeiro, 92L<br>Centro — Santa Rita do Sapucaí, MG<br>CEP: 37540-000</p>
+          <div class="c-item">
+            <span class="c-icon">🕐</span>
+            <div>
+              <strong>Horário de Atendimento</strong>
+              <div class="horarios">
+                <div class="h-row"><span>Dom · Seg · Qua · Qui</span><b>18h30 – 22h30</b></div>
+                <div class="h-row"><span>Sexta-feira</span><b>09h–17h · 18h30–22h59</b></div>
+                <div class="h-row"><span>Sábado</span><b>18h30 – 22h30</b></div>
+                <div class="h-row fechado"><span>Terça-feira</span><b>Fechado</b></div>
               </div>
             </div>
-            <div class="c-item">
-              <span class="c-icon">🕐</span>
-              <div>
-                <strong>Horário de Atendimento</strong>
-                <div class="horarios">
-                  <div class="h-row"><span>Dom · Seg · Qua · Qui</span><b>18h30 – 22h30</b></div>
-                  <div class="h-row"><span>Sexta-feira</span><b>09h–17h · 18h30–22h59</b></div>
-                  <div class="h-row"><span>Sábado</span><b>18h30 – 22h30</b></div>
-                  <div class="h-row fechado"><span>Terça-feira</span><b>Fechado</b></div>
-                </div>
-              </div>
-            </div>
-            <div class="c-item">
-              <span class="c-icon">💳</span>
-              <div>
-                <strong>Formas de Pagamento</strong>
-                <p>Dinheiro · Cartão de Crédito · Débito<br><em>Pagamento na entrega</em></p>
-              </div>
-            </div>
-            <div class="c-item">
-              <span class="c-icon">📸</span>
-              <div>
-                <strong>Instagram</strong>
-                <a href="https://www.instagram.com/supremepizzariaartesanal" target="_blank" class="link-verde">@supremepizzariaartesanal</a>
-              </div>
-            </div>
           </div>
-          <a href="https://wa.me/5535997555795" class="btn btn--whatsapp" target="_blank">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.83L.057 23.999l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.359-.214-3.741.981.999-3.648-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
-            Falar pelo WhatsApp
-          </a>
-        </div>
-        <div class="contato__mapa">
-          <h3>📍 Como Chegar</h3>
-          <div class="mapa-box">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.12!2d-45.7088!3d-22.2570!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca7d2e3f9a1b1b%3A0x1!2sRua%20Comendador%20Cust%C3%B3dio%20Ribeiro%2C%2092%20-%20Santa%20Rita%20do%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1" width="100%" height="100%" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <a href="https://www.google.com/maps/search/Rua+Comendador+Custodio+Ribeiro+92+Santa+Rita+do+Sapucai+MG" target="_blank" class="btn btn--dark btn--block">🗺️ Abrir no Google Maps</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <div class="footer__logo">
-            <span class="logo-text">SUPREME</span>
-            <div class="logo-flag"><span></span><span></span><span></span></div>
-            <small>Pizzaria Artesanal</small>
+          <div class="c-item">
+            <span class="c-icon">💳</span>
+            <div>
+              <strong>Formas de Pagamento</strong>
+              <p>Dinheiro · Cartão de Crédito · Débito<br><em>Pagamento na entrega</em></p>
+            </div>
           </div>
-          <p>Pizza artesanal com ingredientes selecionados. Santa Rita do Sapucaí, MG.</p>
-        </div>
-        <div class="footer__nav">
-          <h4>Páginas</h4>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="cardapio.html">Cardápio & Pedido</a></li>
-            <li><a href="index.html#sobre">Sobre</a></li>
-            <li><a href="index.html#contato">Contato</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav">
-          <h4>Redes Sociais</h4>
-          <ul>
-            <li><a href="https://www.instagram.com/supremepizzariaartesanal" target="_blank">📸 Instagram</a></li>
-            <li><a href="https://wa.me/5535997555795" target="_blank">💬 WhatsApp</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>© 2025 Supreme Pizzaria Artesanal. Todos os direitos reservados.</p>
-        <p>Santa Rita do Sapucaí, MG 🇧🇷</p>
-      </div>
-    </div>
-    <div class="footer__stripe"></div>
-  </footer>
 
-  <script src="main.js"></script>
+          <div class="c-item">
+            <span class="c-icon">📸</span>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/supremepizzariaartesanal" target="_blank" class="link-verde">
+                @supremepizzariaartesanal
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="https://wa.me/5535999999999" class="btn btn--whatsapp" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.83L.057 23.999l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.359-.214-3.741.981.999-3.648-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+          Falar pelo WhatsApp
+        </a>
+      </div>
+
+      <!-- Mapa -->
+      <div class="contato__mapa">
+        <h3>📍 Como Chegar</h3>
+        <div class="mapa-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.12!2d-45.7088!3d-22.2570!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca7d2e3f9a1b1b%3A0x1!2sRua%20Comendador%20Cust%C3%B3dio%20Ribeiro%2C%2092%20-%20Santa%20Rita%20do%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1"
+            width="100%" height="100%" style="border:0"
+            allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <a href="https://www.google.com/maps/search/Rua+Comendador+Custodio+Ribeiro+92+Santa+Rita+do+Sapucai+MG"
+           target="_blank" class="btn btn--dark btn--block">
+          🗺️ Abrir no Google Maps
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="logo-text">SUPREME</span>
+          <div class="logo-flag"><span></span><span></span><span></span></div>
+          <small>Pizzaria Artesanal</small>
+        </div>
+        <p>Pizza artesanal com ingredientes selecionados. Santa Rita do Sapucaí, MG.</p>
+      </div>
+
+      <div class="footer__nav">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio & Pedido</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/supremepizzariaartesanal" target="_blank">📸 Instagram</a></li>
+          <li><a href="https://wa.me/5535999999999" target="_blank">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Supreme Pizzaria Artesanal. Todos os direitos reservados.</p>
+      <p>Santa Rita do Sapucaí, MG 🇧🇷</p>
+    </div>
+  </div>
+  <div class="footer__stripe"></div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>

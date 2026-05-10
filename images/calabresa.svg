@@ -1,0 +1,34 @@
+<!--
+  IMAGEM: Calabresa
+  TODO: Substituir este arquivo por uma foto real do sabor Calabresa.
+  Tamanho recomendado: 600x600px, formato .jpg ou .webp
+  Nome do arquivo a manter: calabresa.jpg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%"><stop offset="0%" stop-color="#1c1c1c"/><stop offset="100%" stop-color="#080808"/></radialGradient>
+    <radialGradient id="massa" cx="45%" cy="40%"><stop offset="0%" stop-color="#D4A050"/><stop offset="100%" stop-color="#9B6820"/></radialGradient>
+    <radialGradient id="molho" cx="50%" cy="50%"><stop offset="0%" stop-color="#B83020"/><stop offset="100%" stop-color="#7A1A08"/></radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="165" ry="12" fill="rgba(0,0,0,0.5)"/>
+  <circle cx="200" cy="200" r="155" fill="#A06828"/>
+  <circle cx="200" cy="200" r="138" fill="url(#massa)"/>
+  <circle cx="200" cy="200" r="118" fill="url(#molho)"/>
+  <!-- Queijo -->
+  <ellipse cx="190" cy="192" rx="60" ry="50" fill="#ECC850" opacity=".8"/>
+  <ellipse cx="220" cy="215" rx="50" ry="40" fill="#F0D060" opacity=".75"/>
+  <!-- Calabresa (fatias ovais avermelhadas) -->
+  <ellipse cx="170" cy="170" rx="18" ry="11" fill="#8B1010" transform="rotate(-30,170,170)"/>
+  <ellipse cx="230" cy="175" rx="17" ry="10" fill="#7A0E0E" transform="rotate(20,230,175)"/>
+  <ellipse cx="210" cy="230" rx="19" ry="11" fill="#8B1010" transform="rotate(-10,210,230)"/>
+  <ellipse cx="168" cy="225" rx="16" ry="10" fill="#701010" transform="rotate(35,168,225)"/>
+  <ellipse cx="200" cy="185" rx="15" ry="9"  fill="#8B1010" transform="rotate(5,200,185)"/>
+  <ellipse cx="183" cy="212" rx="17" ry="10" fill="#7A0E0E" transform="rotate(-20,183,212)"/>
+  <!-- Cebola -->
+  <ellipse cx="185" cy="155" rx="12" ry="5" fill="#D8A060" opacity=".7" transform="rotate(-15,185,155)"/>
+  <ellipse cx="225" cy="240" rx="11" ry="5" fill="#C89050" opacity=".65" transform="rotate(10,225,240)"/>
+  <!-- Label -->
+  <rect x="60" y="340" width="280" height="36" rx="18" fill="rgba(0,0,0,0.55)"/>
+  <text x="200" y="363" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#F2EDE6">Calabresa</text>
+</svg>

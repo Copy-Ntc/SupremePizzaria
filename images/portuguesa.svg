@@ -1,0 +1,38 @@
+<!--
+  IMAGEM: Portuguesa
+  TODO: Substituir este arquivo por uma foto real.
+  Tamanho recomendado: 600x600px, formato .jpg ou .webp
+  Nome do arquivo a manter: portuguesa.jpg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%"><stop offset="0%" stop-color="#1c1c1c"/><stop offset="100%" stop-color="#080808"/></radialGradient>
+    <radialGradient id="massa" cx="45%" cy="40%"><stop offset="0%" stop-color="#D4A050"/><stop offset="100%" stop-color="#9B6820"/></radialGradient>
+    <radialGradient id="molho" cx="50%" cy="50%"><stop offset="0%" stop-color="#C84030"/><stop offset="100%" stop-color="#8B2010"/></radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="165" ry="12" fill="rgba(0,0,0,0.5)"/>
+  <circle cx="200" cy="200" r="155" fill="#A06828"/>
+  <circle cx="200" cy="200" r="138" fill="url(#massa)"/>
+  <circle cx="200" cy="200" r="118" fill="url(#molho)"/>
+  <!-- Queijo -->
+  <ellipse cx="195" cy="195" rx="58" ry="50" fill="#ECC850" opacity=".8"/>
+  <!-- Ovo estrelado -->
+  <circle cx="200" cy="198" r="22" fill="#F5E080"/>
+  <circle cx="200" cy="198" r="11" fill="#F0B020"/>
+  <!-- Presunto -->
+  <ellipse cx="168" cy="172" rx="16" ry="10" fill="#E08080" opacity=".85" transform="rotate(-20,168,172)"/>
+  <ellipse cx="230" cy="178" rx="15" ry="9"  fill="#D07070" opacity=".8"  transform="rotate(15,230,178)"/>
+  <!-- Pimentão verde -->
+  <rect x="165" y="222" width="18" height="7" rx="3" fill="#2A8020" transform="rotate(-10,174,225)"/>
+  <rect x="218" y="218" width="16" height="6" rx="3" fill="#1E6B18" transform="rotate(20,226,221)"/>
+  <!-- Pimentão vermelho -->
+  <rect x="182" y="160" width="14" height="6" rx="3" fill="#C83020" transform="rotate(5,189,163)"/>
+  <!-- Azeitonas -->
+  <circle cx="175" cy="208" r="6" fill="#2A2010"/>
+  <circle cx="224" cy="212" r="6" fill="#2A2010"/>
+  <circle cx="200" cy="230" r="5" fill="#2A2010"/>
+  <!-- Label -->
+  <rect x="60" y="340" width="280" height="36" rx="18" fill="rgba(0,0,0,0.55)"/>
+  <text x="200" y="363" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#F2EDE6">Portuguesa</text>
+</svg>

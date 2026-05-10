@@ -1,0 +1,36 @@
+<!--
+  IMAGEM: Quatro Queijos
+  TODO: Substituir este arquivo por uma foto real.
+  Tamanho recomendado: 600x600px, formato .jpg ou .webp
+  Nome do arquivo a manter: quatro-queijos.jpg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%"><stop offset="0%" stop-color="#1c1c1c"/><stop offset="100%" stop-color="#080808"/></radialGradient>
+    <radialGradient id="massa" cx="45%" cy="40%"><stop offset="0%" stop-color="#D4A050"/><stop offset="100%" stop-color="#9B6820"/></radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="165" ry="12" fill="rgba(0,0,0,0.5)"/>
+  <circle cx="200" cy="200" r="155" fill="#A06828"/>
+  <circle cx="200" cy="200" r="138" fill="url(#massa)"/>
+  <!-- 4 quadrantes de queijo -->
+  <!-- Mozzarella (branco) -->
+  <path d="M200,200 L200,82 A118,118 0 0,1 318,200 Z" fill="#F5F0DC"/>
+  <!-- Catupiry (creme) -->
+  <path d="M200,200 L318,200 A118,118 0 0,1 200,318 Z" fill="#EDE0A8"/>
+  <!-- Provolone (amarelo escuro) -->
+  <path d="M200,200 L200,318 A118,118 0 0,1 82,200 Z" fill="#D4B040"/>
+  <!-- Gorgonzola (cinza esverdeado) -->
+  <path d="M200,200 L82,200 A118,118 0 0,1 200,82 Z" fill="#C8C8A0"/>
+  <!-- Veios gorgonzola -->
+  <path d="M130,140 Q155,168 145,195" stroke="#5A7040" stroke-width="2.5" fill="none" opacity=".7"/>
+  <path d="M110,175 Q138,185 128,210" stroke="#4A6030" stroke-width="2" fill="none" opacity=".6"/>
+  <!-- Linhas divisórias -->
+  <line x1="200" y1="82" x2="200" y2="318" stroke="#A06828" stroke-width="3" opacity=".6"/>
+  <line x1="82" y1="200" x2="318" y2="200" stroke="#A06828" stroke-width="3" opacity=".6"/>
+  <!-- Borda -->
+  <circle cx="200" cy="200" r="118" fill="none" stroke="#A06828" stroke-width="2" opacity=".4"/>
+  <!-- Label -->
+  <rect x="60" y="340" width="280" height="36" rx="18" fill="rgba(0,0,0,0.55)"/>
+  <text x="200" y="363" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-weight="bold" fill="#F2EDE6">Quatro Queijos</text>
+</svg>

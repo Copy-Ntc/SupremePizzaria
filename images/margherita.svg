@@ -1,0 +1,38 @@
+<!--
+  IMAGEM: Margherita
+  TODO: Substituir este arquivo por uma foto real do sabor Margherita.
+  Tamanho recomendado: 600x600px, formato .jpg ou .webp
+  Nome do arquivo a manter: margherita.jpg (e atualizar referência no cardapio.js)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%"><stop offset="0%" stop-color="#1c1c1c"/><stop offset="100%" stop-color="#080808"/></radialGradient>
+    <radialGradient id="massa" cx="45%" cy="40%"><stop offset="0%" stop-color="#D4A050"/><stop offset="100%" stop-color="#9B6820"/></radialGradient>
+    <radialGradient id="molho" cx="50%" cy="50%"><stop offset="0%" stop-color="#C84030"/><stop offset="100%" stop-color="#8B2010"/></radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Prato / sombra -->
+  <ellipse cx="200" cy="215" rx="165" ry="12" fill="rgba(0,0,0,0.5)"/>
+  <!-- Borda pizza -->
+  <circle cx="200" cy="200" r="155" fill="#A06828"/>
+  <!-- Massa -->
+  <circle cx="200" cy="200" r="138" fill="url(#massa)"/>
+  <!-- Molho -->
+  <circle cx="200" cy="200" r="118" fill="url(#molho)"/>
+  <!-- Queijo -->
+  <ellipse cx="185" cy="188" rx="55" ry="48" fill="#F0D060" opacity=".85"/>
+  <ellipse cx="225" cy="210" rx="48" ry="42" fill="#ECC850" opacity=".8"/>
+  <ellipse cx="195" cy="225" rx="38" ry="32" fill="#F4D870" opacity=".75"/>
+  <!-- Manjericão -->
+  <ellipse cx="165" cy="165" rx="14" ry="9" fill="#2A8040" transform="rotate(-20,165,165)"/>
+  <ellipse cx="230" cy="170" rx="12" ry="8" fill="#1E6B30" transform="rotate(15,230,170)"/>
+  <ellipse cx="215" cy="235" rx="13" ry="8" fill="#2A8040" transform="rotate(-10,215,235)"/>
+  <ellipse cx="168" cy="228" rx="11" ry="7" fill="#22703A" transform="rotate(25,168,228)"/>
+  <!-- Tomates cereja -->
+  <circle cx="180" cy="175" r="10" fill="#E03020"/>
+  <circle cx="225" cy="185" r="9"  fill="#C82818"/>
+  <circle cx="208" cy="228" r="9"  fill="#D82A20"/>
+  <!-- Label -->
+  <rect x="60" y="340" width="280" height="36" rx="18" fill="rgba(0,0,0,0.55)"/>
+  <text x="200" y="363" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#F2EDE6">Margherita</text>
+</svg>

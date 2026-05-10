@@ -1,0 +1,35 @@
+<!--
+  IMAGEM: Frango com Catupiry
+  TODO: Substituir este arquivo por uma foto real.
+  Tamanho recomendado: 600x600px, formato .jpg ou .webp
+  Nome do arquivo a manter: frango-catupiry.jpg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%"><stop offset="0%" stop-color="#1c1c1c"/><stop offset="100%" stop-color="#080808"/></radialGradient>
+    <radialGradient id="massa" cx="45%" cy="40%"><stop offset="0%" stop-color="#D4A050"/><stop offset="100%" stop-color="#9B6820"/></radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="165" ry="12" fill="rgba(0,0,0,0.5)"/>
+  <circle cx="200" cy="200" r="155" fill="#A06828"/>
+  <circle cx="200" cy="200" r="138" fill="url(#massa)"/>
+  <!-- Base catupiry (branco cremoso) -->
+  <circle cx="200" cy="200" r="118" fill="#F5F0E8"/>
+  <!-- Catupiry em manchas -->
+  <ellipse cx="195" cy="192" rx="52" ry="45" fill="#FFFDF8" opacity=".9"/>
+  <ellipse cx="220" cy="218" rx="44" ry="38" fill="#FBF8F0" opacity=".85"/>
+  <!-- Frango desfiado -->
+  <ellipse cx="172" cy="178" rx="16" ry="7" fill="#C8A060" transform="rotate(-20,172,178)"/>
+  <ellipse cx="215" cy="172" rx="18" ry="7" fill="#B89050" transform="rotate(15,215,172)"/>
+  <ellipse cx="228" cy="210" rx="15" ry="6" fill="#C8A060" transform="rotate(-5,228,210)"/>
+  <ellipse cx="185" cy="228" rx="17" ry="7" fill="#B89050" transform="rotate(30,185,228)"/>
+  <ellipse cx="202" cy="200" rx="14" ry="6" fill="#C0985A" transform="rotate(-10,202,200)"/>
+  <ellipse cx="170" cy="215" rx="13" ry="5" fill="#B89050" transform="rotate(20,170,215)"/>
+  <!-- Catupiry gotas -->
+  <circle cx="182" cy="188" r="8"  fill="#FFFDF8" opacity=".95"/>
+  <circle cx="218" cy="225" r="7"  fill="#FBF8F0" opacity=".9"/>
+  <circle cx="207" cy="185" r="6"  fill="#FFFDF8" opacity=".85"/>
+  <!-- Label -->
+  <rect x="60" y="340" width="280" height="36" rx="18" fill="rgba(0,0,0,0.55)"/>
+  <text x="200" y="363" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#F2EDE6">Frango c/ Catupiry</text>
+</svg>

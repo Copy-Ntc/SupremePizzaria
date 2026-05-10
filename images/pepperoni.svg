@@ -1,0 +1,30 @@
+<!--
+  IMAGEM: Pepperoni
+  TODO: Substituir este arquivo por uma foto real.
+  Tamanho recomendado: 600x600px, formato .jpg ou .webp
+  Nome do arquivo a manter: pepperoni.jpg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%"><stop offset="0%" stop-color="#1c1c1c"/><stop offset="100%" stop-color="#080808"/></radialGradient>
+    <radialGradient id="massa" cx="45%" cy="40%"><stop offset="0%" stop-color="#D4A050"/><stop offset="100%" stop-color="#9B6820"/></radialGradient>
+    <radialGradient id="molho" cx="50%" cy="50%"><stop offset="0%" stop-color="#C84030"/><stop offset="100%" stop-color="#8B2010"/></radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="165" ry="12" fill="rgba(0,0,0,0.5)"/>
+  <circle cx="200" cy="200" r="155" fill="#A06828"/>
+  <circle cx="200" cy="200" r="138" fill="url(#massa)"/>
+  <circle cx="200" cy="200" r="118" fill="url(#molho)"/>
+  <!-- Queijo -->
+  <ellipse cx="192" cy="190" rx="56" ry="48" fill="#ECC850" opacity=".82"/>
+  <ellipse cx="218" cy="215" rx="48" ry="40" fill="#F0D060" opacity=".78"/>
+  <!-- Pepperoni slices (círculos vermelhos escuros com textura) -->
+  <circle cx="175" cy="170" r="17" fill="#7A1010"/><circle cx="175" cy="170" r="14" fill="#8B1818"/><circle cx="175" cy="170" r="5" fill="#6A0C0C"/>
+  <circle cx="222" cy="172" r="16" fill="#7A1010"/><circle cx="222" cy="172" r="13" fill="#8B1818"/><circle cx="222" cy="172" r="4" fill="#6A0C0C"/>
+  <circle cx="207" cy="225" r="17" fill="#7A1010"/><circle cx="207" cy="225" r="14" fill="#8B1818"/><circle cx="207" cy="225" r="5" fill="#6A0C0C"/>
+  <circle cx="170" cy="220" r="15" fill="#7A1010"/><circle cx="170" cy="220" r="12" fill="#8B1818"/>
+  <circle cx="200" cy="190" r="13" fill="#801212"/><circle cx="200" cy="190" r="10" fill="#8B1818"/>
+  <!-- Label -->
+  <rect x="60" y="340" width="280" height="36" rx="18" fill="rgba(0,0,0,0.55)"/>
+  <text x="200" y="363" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#F2EDE6">Pepperoni</text>
+</svg>
